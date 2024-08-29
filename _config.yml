@@ -1,0 +1,45 @@
+# _config.yml
+
+# Base URL do site (ajuste conforme necessário)
+url: "https://jeffreypir.github.io/ProbabiliticRobotics/"
+
+# Caminho base do site (ajuste conforme necessário)
+baseurl: ""
+
+# Nome do título do site
+title: "Seu Título"
+
+# Descrição do site
+description: "Descrição do seu site"
+
+# Configurações do MathJax
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  math_engine_opts:
+    extensions:
+      - "textex"
+    mathjax:
+      # Configurações do MathJax
+      "version": "2.7.7"
+      "tex2jax":
+        "inlineMath":
+          - "$$"
+          - "$"
+        "displayMath":
+          - "$$"
+          - "$$"
+        "processEscapes": true
+      "TeX":
+        "equationNumbers": "none"
+      "menuSettings":
+        "zoom": false
+
+# Outras configurações do Jekyll
+theme: minima # ou outro tema que você esteja usando
+
+# Configurações do plugin
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
