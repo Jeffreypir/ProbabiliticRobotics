@@ -2,4 +2,4 @@
 
 Esse repositório é focado em automação estocástica.
 
-Veja index ou acesse https://jeffreypir.github.io/ProbabiliticRobotics/ para informações.
+Veja index.md ou acesse https://jeffreypir.github.io/ProbabiliticRobotics/ para informações.
