@@ -7,10 +7,10 @@ url: "https://jeffreypir.github.io/ProbabiliticRobotics/"
 baseurl: ""
 
 # Nome do título do site
-title: "Seu Título"
+title: "Programação Estocástica"
 
 # Descrição do site
-description: "Descrição do seu site"
+description: "Pesquisa em automação estocástica"
 
 # Configurações do MathJax
 markdown: kramdown
