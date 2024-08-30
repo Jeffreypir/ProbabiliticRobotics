@@ -45,7 +45,6 @@ Para a análise dos dados, serão utilizadas as linguagens R ou Python devido à
 
 <div align="justify">
 Nesta seção, serão abordados os conceitos básicos de probabilidade utilizados em robótica probabilística. Nesse sentido, serão utilizados conceitos abordados por Ross (2014a). Em robótica probabilística, quantidades como medidas de sensores, controles, estados do robô e o ambiente são modeladas por variáveis aleatórias. Uma variável aleatória pode assumir múltiplos valores que estão de acordo com leis de probabilidade específicas. Nesse sentido, a inferência probabilística é o processo de calcular essas leis que derivam de outras variáveis aleatórias e dos dados observados. Assim, definimos:
-</div>
 
 $$
 P(X = x)
@@ -124,7 +123,7 @@ Finalmente, a distribuição posterior é usada para avaliar a probabilidade das
 ## Resultados Esperados
 
 A aplicação da robótica probabilística utilizando a plataforma Arduino deverá possibilitar a adaptação dos robôs a diferentes contextos e ambientes de maneira mais eficiente e precisa. Espera-se que, ao aplicar algoritmos probabilísticos e estatísticos na análise dos dados coletados pelos sensores, seja possível melhorar a resposta dos robôs a incertezas e variabilidades do ambiente. Além disso, a plataforma Arduino deverá fornecer uma base sólida para a implementação prática dos algoritmos, contribuindo para a validação dos modelos probabilísticos propostos.
-
+</div>
 ### Referências
 
 - MITCHELL, A. *Arduino: Guia para iniciantes*. 2012.
