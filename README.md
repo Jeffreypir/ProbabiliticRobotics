@@ -1,6 +1,3 @@
-Claro! Vou converter as fórmulas para LaTeX e ajustar o texto conforme necessário. Aqui está o texto atualizado com as fórmulas em LaTeX:
-
-```latex
 # Robótica Probabilística: Automação Estocástica com Arduino
 
 ## Introdução
@@ -98,6 +95,5 @@ A aplicação da robótica probabilística utilizando a plataforma Arduino dever
 - VANderPLAS, J. *Python Data Science Handbook*. 2016.
 - WICKHAM, H. *R for Data Science*. 2016.
 
-```
 
 
