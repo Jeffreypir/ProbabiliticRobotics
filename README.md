@@ -14,36 +14,34 @@ O nível de incerteza no funcionamento do robô depende da aplicação. Nesse se
 
 Na construção e nos testes com robôs, é importante ter uma plataforma de prototipagem, ou seja, uma plataforma de hardware e software para a implementação de modelos e algoritmos em protótipos de robôs. A plataforma Arduino se destaca por fornecer uma plataforma livre. A construção de hardware e software no Arduino, bem como sua documentação, são abertas, permitindo que os desenvolvedores analisem o funcionamento dos protótipos sem restrições de licença (Mitchell, 2012). Além disso, seus componentes são de fácil acesso, o que torna a plataforma favorável para a análise de dados e a implementação de modelos, garantindo a fidelidade dos dados.
 
-Nesse sentido, o presente trabalho propõe um estudo sobre robótica probabilística e suas aplicações utilizando a plataforma Arduino, por essa área ter um amplo campo de desenvolvimento em diferentes ambientes. Assim, são necessários algoritmos probabilístico-estatísticos robustos para a aplicabilidade de robôs em diferentes tarefas e ambientes. </div>
+Nesse sentido, o presente trabalho propõe um estudo sobre robótica probabilística e suas aplicações utilizando a plataforma Arduino, por essa área ter um amplo campo de desenvolvimento em diferentes ambientes. Assim, são necessários algoritmos probabilístico-estatísticos robustos para a aplicabilidade de robôs em diferentes tarefas e ambientes. 
 
 ## Objetivos
 
 ### Geral
-<div align="justify">
+
 Implementar e analisar algoritmos probabilísticos/estatísticos por meio da robótica probabilística para melhor adaptabilidade de robôs em diferentes contextos.
-</div>
+
 
 ### Específicos
-<div align="justify">
+
 - Programar algoritmos da robótica probabilística em diferentes contextos.
 - Analisar dados para aplicação na adaptação de robôs e automação.
 - Averiguar a utilização da plataforma Arduino como plataforma de prototipagem e estudo de robôs.
-</div>
 
 ## Metodologia
 
 ### Dados e linguagem de programação
-<div align="justify">
+
 Os dados serão obtidos por meio de sensores da plataforma de prototipagem em Arduino e serão analisados com rigor estatístico. Esses dados serão utilizados para simulações e inferências estatísticas conforme a necessidade da pesquisa.
 
 Na escolha da(s) linguagem(s), será utilizada principalmente a linguagem C/C++, padrão da plataforma Arduino, devido à sua proximidade com o hardware, o que permite o controle de pinos de entrada e saída, temporizadores, interrupções e outros recursos do compilador (Mitchell, 2012). Essa linguagem também permite um uso eficiente da memória, o que é importante uma vez que o microcontrolador do Arduino possui uma quantidade limitada de memória disponível. Além disso, por permitir programação orientada a objetos, facilita a codificação de estruturas complexas e a reutilização de código (Stroustrup, 2013).
 
 Para a análise dos dados, serão utilizadas as linguagens R ou Python devido à facilidade de codificação e às bibliotecas disponíveis para análise de dados, plotagem e estatística em geral, conforme discutido por Wickham (2016) e VanderPlas (2016).
-</div>
+
 
 ### Conceitos básicos de probabilidade utilizados na robótica probabilística
 
-<div align="justify">
 Nesta seção, serão abordados os conceitos básicos de probabilidade utilizados em robótica probabilística. Nesse sentido, serão utilizados conceitos abordados por Ross (2014a). Em robótica probabilística, quantidades como medidas de sensores, controles, estados do robô e o ambiente são modeladas por variáveis aleatórias. Uma variável aleatória pode assumir múltiplos valores que estão de acordo com leis de probabilidade específicas. Nesse sentido, a inferência probabilística é o processo de calcular essas leis que derivam de outras variáveis aleatórias e dos dados observados. Assim, definimos:
 
 $$
