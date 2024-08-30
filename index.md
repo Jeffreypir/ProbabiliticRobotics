@@ -38,13 +38,14 @@ Para a análise dos dados, serão utilizadas as linguagens R ou Python devido à
 
 Nesta seção, serão abordados os conceitos básicos de probabilidade utilizados em robótica probabilística. Nesse sentido, serão utilizados conceitos abordados por Ross (2014a). Em robótica probabilística, quantidades como medidas de sensores, controles, estados do robô e o ambiente são modeladas por variáveis aleatórias. Uma variável aleatória pode assumir múltiplos valores que estão de acordo com leis de probabilidade específicas. Nesse sentido, a inferência probabilística é o processo de calcular essas leis que derivam de outras variáveis aleatórias e dos dados observados. Assim, definimos:
 
-
+```math 
 P(X=x).
-
-
+```
 Sendo X uma variável aleatória, a probabilidade de X assumir um valor x é P(X = x). No caso de variáveis discretas, o somatório das probabilidades de todos os possíveis valores de X é igual a 1, ou seja:
 
+```math
 Σ_xP(X=x) = 1.
+```
 
 No caso contínuo, a integral da função de densidade de probabilidade é igual a 1, ou seja:
 
