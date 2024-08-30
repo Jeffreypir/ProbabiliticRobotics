@@ -93,16 +93,18 @@ Os resultados da probabilidade total permitem a formulação de importantes equa
 
 - Discreto:
   ```math
-   p(x | y) = [p(y | x) p(x)] / p(y) = [p(y | x) p(x)] / Σ_x'[p(y | x')p(x')]
+   p(x | y) = p(y | x) p(x) / p(y) = p(y | x) p(x) / Σ_x'p(y | x')p(x')
   ```
 - Contínuo:
  ```math
- p(x | y) = [p(y | x) p(x)] / p(y) = [p(y | x) p(x)] / ∫p(y | x') p(x') dx'
+ p(x | y) = p(y | x) p(x) / p(y) = p(y | x) p(x) / ∫p(y | x') p(x') dx'
 ```
 
 Uma vez que x é a quantidade a ser inferida a partir de y, a probabilidade p(x) será denominada de distribuição de probabilidade anterior, e y será a variável de dados do estudo, por exemplo, a medida de um sensor do robô em estudo. A distribuição p(x) resume a informação sobre a variável X antes de incorporarmos os dados de y. A probabilidade p(x∣y) é chamada de distribuição de probabilidade posterior de X. A regra de Bayes permite inferir a quantidade x a partir dos dados do sensor y utilizando a probabilidade inversa, isto é, calcular a probabilidade dos dados y assumindo que x é o caso a ser analisado (THRUN; BURGARD; DURRANT-WHYTE, 2005). A probabilidade p(x | y) em robótica probabilística é chamada de modelo generativo, pois descreve em algum nível de abstração como o estado da variável X influencia a medida do sensor Y. Na regra de Bayes, observa-se primeiramente que p(y) não depende de x. Por essa razão, utiliza-se η = ​1/p(y) para normalizar a regra de Bayes. Assim, ao usar η = ​1/p(y) obtemos a seguinte formulação:
 
+```math
 p(x | y) = η p(y | x)p(x).
+```
 
 Essa formulação tem como objetivo deixar evidente que ao final do processo de aplicação da regra de Bayes deve-se realizar a normalização para 1.
 
@@ -124,7 +126,9 @@ Na medição dos sensores, temos a percepção, que é a forma como o robô usa 
 
 A medida dos dados do ambiente provém do estado do ambiente no qual o robô está situado, por exemplo, medidas de dados de uma câmera. No presente trabalho, as medidas de dados em um instante de tempo t serão denotadas por z_t. Essa notação facilita a formulação do modelo, pois a representação de todas as medidas de dados feitas no intervalo de tempo t_1 < t_2 pode ser escrita de forma simplificada como:
 
+```math
 z_t1:z_t2 = z_t1 z_tt+1 z_tt+2 … z_t2.
+```
 
 O controle de dados fornece informações sobre a escolha do estado em um ambiente, como por exemplo o controle de velocidade de um robô. A notação para controle de dados será u_t. A variável u_t representa a escolha do estado no intervalo de tempo (t-1,t]. De forma semelhante às medidas de estado para um intervalo de tempo t_1<t_2​ todas as sequências de controle são representadas na notação:
 
