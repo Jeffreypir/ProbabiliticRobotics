@@ -81,13 +81,14 @@ $$
 Os axiomas de probabilidade e a probabilidade condicional permitem determinar os resultados da probabilidade total, dados por:
 
 - Discreto:
-  $$
+  ```math
   p(x) = \sum_{y} p(x \mid y) \cdot p(y)
-  $$
+  ```
+  
 - Contínuo:
-  $$
+  ```math
   p(x) = \int p(x \mid y) \cdot p(y) \, dy \
-  $$
+  ```
 
 Os resultados da probabilidade total permitem a formulação de importantes equações para a robótica probabilística, conhecidas como regras de Bayes, apresentadas da seguinte forma: para \( p(y) > 0 \), tem-se:
 
