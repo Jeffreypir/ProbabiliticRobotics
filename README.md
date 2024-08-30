@@ -109,9 +109,9 @@ $$
   ```math
   p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\int p(y \mid x') \cdot p(x') \, dx'}
   ```
-
+```latex
 Uma vez que \( x \) é a quantidade a ser inferida a partir de \( y \), a probabilidade \( p(x) \) será denominada de distribuição de probabilidade anterior, e \( y \) será a variável de dados do estudo, por exemplo, a medida de um sensor do robô em estudo. A distribuição \( p(x) \) resume a informação sobre a variável \( X \) antes de incorporarmos os dados de \( y \). A probabilidade \( p(x \mid y) \) é chamada de distribuição de probabilidade posterior de \( X \). A regra de Bayes permite inferir a quantidade \( x \) a partir dos dados do sensor \( y \) utilizando a probabilidade inversa, isto é, calcular a probabilidade dos dados \( y \) assumindo que \( x \) é o caso a ser analisado (Thrun, Burgard, Durrant-Whyte, 2005). A probabilidade \( p(x \mid y) \) em robótica probabilística é chamada de modelo generativo, pois descreve em algum nível de abstração como o estado da variável \( X \) influencia a medida do sensor \( Y \). Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se $ \eta = \frac{1}{p(y) $  para calcular a probabilidade:
-
+```
 $$
 p(x \mid y) = \eta \cdot p(y \mid x) \cdot p(x) 
 $$
