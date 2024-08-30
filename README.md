@@ -124,6 +124,7 @@ Finalmente, a distribuição posterior é usada para avaliar a probabilidade das
 
 A aplicação da robótica probabilística utilizando a plataforma Arduino deverá possibilitar a adaptação dos robôs a diferentes contextos e ambientes de maneira mais eficiente e precisa. Espera-se que, ao aplicar algoritmos probabilísticos e estatísticos na análise dos dados coletados pelos sensores, seja possível melhorar a resposta dos robôs a incertezas e variabilidades do ambiente. Além disso, a plataforma Arduino deverá fornecer uma base sólida para a implementação prática dos algoritmos, contribuindo para a validação dos modelos probabilísticos propostos.
 </div>
+
 ### Referências
 
 - MITCHELL, A. *Arduino: Guia para iniciantes*. 2012.
