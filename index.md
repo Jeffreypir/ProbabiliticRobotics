@@ -72,7 +72,7 @@ Frequentemente, as variáveis aleatórias têm informações sobre outras variá
 p(x | y) = p(X=x | Y=y).
 ```
 
-No caso ```math p(y)>0```, a probabilidade condicional é definida por:
+No caso ```math p(y)>0 ```, a probabilidade condicional é definida por:
 
 p(x | y) = p(x)p(y) / p(y) = p(x).
 
