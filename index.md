@@ -48,9 +48,9 @@ Sendo X uma variável aleatória, a probabilidade de X assumir um valor x é P(X
 
 No caso contínuo, a integral da função de densidade de probabilidade é igual a 1, ou seja:
 
-\[
+```math
 ∫p(x)dx = 1.
-/]
+```
 
 No estudo probabilístico, há o conceito de probabilidade conjunta que descreve a probabilidade das variáveis aleatórias X e Y assumirem os valores x e y, respectivamente. Esse conceito é dado por:
 
