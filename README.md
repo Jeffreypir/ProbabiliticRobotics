@@ -42,7 +42,7 @@ $$
 P(X = x)
 $$
 
-Sendo $ X $ uma variável aleatória, a probabilidade de \( X \) assumir um valor \( x \) é \( P(X = x) \). No caso de variáveis discretas, o somatório das probabilidades de todos os possíveis valores de \( X \) é igual a 1, ou seja:
+Sendo \( X \) uma variável aleatória, a probabilidade de \( X \) assumir um valor \( x \) é \( P(X = x) \). No caso de variáveis discretas, o somatório das probabilidades de todos os possíveis valores de \( X \) é igual a 1, ou seja:
 
 \[ \sum_{x} P(X = x) = 1 \]
 
