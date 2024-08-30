@@ -127,7 +127,7 @@ Na medição dos sensores, temos a percepção, que é a forma como o robô usa 
 A medida dos dados do ambiente provém do estado do ambiente no qual o robô está situado, por exemplo, medidas de dados de uma câmera. No presente trabalho, as medidas de dados em um instante de tempo t serão denotadas por z_t. Essa notação facilita a formulação do modelo, pois a representação de todas as medidas de dados feitas no intervalo de tempo t_1 < t_2 pode ser escrita de forma simplificada como:
 
 ```math
-z_t1:z_t2 = z_t1 z_t{t+1} z_t{t+2} … z_t_2.
+z_t1:z_t2 = z_t1 z_t{t+1} z_t{t+2} … z_t2.
 ```
 
 O controle de dados fornece informações sobre a escolha do estado em um ambiente, como por exemplo o controle de velocidade de um robô. A notação para controle de dados será u_t. A variável u_t representa a escolha do estado no intervalo de tempo (t-1,t]. De forma semelhante às medidas de estado para um intervalo de tempo t_1<t_2​ todas as sequências de controle são representadas na notação:
