@@ -93,7 +93,7 @@ Os resultados da probabilidade total permitem a formulação de importantes equa
 
 - Discreto:
   ```math
-   p(x | y) = p(y | x) p(x) / p(y) = p(y | x) p(x) / Σ_x'p(y | x')p(x')
+   p(x | y) = \frac {p(y | x) p(x) } / {p(y)} = p(y | x) p(x) / Σ_x'p(y | x')p(x')
   ```
 - Contínuo:
  ```math
