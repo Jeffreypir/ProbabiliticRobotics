@@ -41,6 +41,7 @@ Nesta seção, serão abordados os conceitos básicos de probabilidade utilizado
 ```math 
 P(X=x).
 ```
+
 Sendo X uma variável aleatória, a probabilidade de X assumir um valor x é P(X = x). No caso de variáveis discretas, o somatório das probabilidades de todos os possíveis valores de X é igual a 1, ou seja:
 
 ```math
@@ -55,17 +56,23 @@ No caso contínuo, a integral da função de densidade de probabilidade é igual
 
 No estudo probabilístico, há o conceito de probabilidade conjunta que descreve a probabilidade das variáveis aleatórias X e Y assumirem os valores x e y, respectivamente. Esse conceito é dado por:
 
+```math 
 p(x,y) = p(X=x e Y=y).
+```
 
 No caso de variáveis independentes:
 
+```math
 p(x,y) = p(x)p(y).
+```
 
 Frequentemente, as variáveis aleatórias têm informações sobre outras variáveis. Por exemplo, os sensores podem fornecer informações importantes sobre o estado do robô para a modelagem probabilística. Nesse sentido, é necessário utilizar a probabilidade condicional para relacionar as variáveis:
 
+```math
 p(x | y) = p(X=x | Y=y).
+```
 
-No caso p(y)>0, a probabilidade condicional é definida por:
+No caso ```math p(y)>0```, a probabilidade condicional é definida por:
 
 p(x | y) = p(x)p(y) / p(y) = p(x).
 
