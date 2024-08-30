@@ -44,43 +44,66 @@ $$
 
 Sendo \( X \) uma variável aleatória, a probabilidade de \( X \) assumir um valor \( x \) é \( P(X = x) \). No caso de variáveis discretas, o somatório das probabilidades de todos os possíveis valores de \( X \) é igual a 1, ou seja:
 
-\[ \sum_{x} P(X = x) = 1 \]
+$$
+\sum_{x} P(X = x) = 1
+$$
 
 No caso contínuo, a integral da função de densidade de probabilidade é igual a 1, ou seja:
 
-\[ \int p(x) \, dx = 1 \]
+$$
+\int p(x) \, dx = 1
+$$
 
 No estudo probabilístico, há o conceito de probabilidade conjunta que descreve a probabilidade das variáveis aleatórias \( X \) e \( Y \) assumirem os valores \( x \) e \( y \), respectivamente. Esse conceito é dado por:
 
-\[ p(x, y) = p(X = x \text{ e } Y = y) \]
+$$
+p(x, y) = p(X = x \text{ e } Y = y)
+$$
 
 No caso de variáveis independentes:
 
-\[ p(x, y) = p(x) \cdot p(y) \]
+$$
+p(x, y) = p(x) \cdot p(y)
+$$
 
 Frequentemente, as variáveis aleatórias têm informações sobre outras variáveis. Por exemplo, os sensores podem fornecer informações importantes sobre o estado do robô para a modelagem probabilística. Nesse sentido, é necessário utilizar a probabilidade condicional para relacionar as variáveis:
 
-\[ p(x \mid y) = \frac{p(x, y)}{p(y)} \]
+$$
+p(x \mid y) = \frac{p(x, y)}{p(y)}
+$$
 
 No caso \( p(y) > 0 \), a probabilidade condicional é definida por:
 
-\[ p(x \mid y) = \frac{p(x) \cdot p(y)}{p(y)} = p(x) \]
+$$
+p(x \mid y) = \frac{p(x) \cdot p(y)}{p(y)} = p(x)
+$$
 
 Os axiomas de probabilidade e a probabilidade condicional permitem determinar os resultados da probabilidade total, dados por:
 
-- Discreto: \[ p(x) = \sum_{y} p(x \mid y) \cdot p(y) \]
-- Contínuo: \[ p(x) = \int p(x \mid y) \cdot p(y) \, dy \]
+- Discreto:
+  $$
+  p(x) = \sum_{y} p(x \mid y) \cdot p(y)
+  $$
+- Contínuo:
+  $$
+  p(x) = \int p(x \mid y) \cdot p(y) \, dy \
+  $$
 
 Os resultados da probabilidade total permitem a formulação de importantes equações para a robótica probabilística, conhecidas como regras de Bayes, apresentadas da seguinte forma: para \( p(y) > 0 \), tem-se:
 
-- Discreto: \[ p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\sum_{x'} [p(y \mid x') \cdot p(x')]} \]
-- Contínuo: \[ p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\int p(y \mid x') \cdot p(x') \, dx'} \]
+- Discreto:
+  $$
+  p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\sum_{x'} [p(y \mid x') \cdot p(x')]}
+  $$
+- Contínuo: $$
+  $$p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\int p(y \mid x') \cdot p(x') \, dx'}
+  $$
 
-Uma vez que \( x \) é a quantidade a ser inferida a partir de \( y \), a probabilidade \( p(x) \) será denominada de distribuição de probabilidade anterior, e \( y \) será a variável de dados do estudo, por exemplo, a medida de um sensor do robô em estudo. A distribuição \( p(x) \) resume a informação sobre a variável \( X \) antes de incorporarmos os dados de \( y \). A probabilidade \( p(x \mid y) \) é chamada de distribuição de probabilidade posterior de \( X \). A regra de Bayes permite inferir a quantidade \( x \) a partir dos dados do sensor \( y \) utilizando a probabilidade inversa, isto é, calcular a probabilidade dos dados \( y \) assumindo que \( x \) é o caso a ser analisado (Thrun, Burgard, Durrant-Whyte, 2005). A probabilidade \( p(x \mid y) \) em robótica probabilística é chamada de modelo generativo, pois descreve em algum nível de abstração como o estado da variável \( X \) influencia a medida do sensor \( Y \). Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se \( \eta = \frac{1}{p(y)}
+Uma vez que \( x \) é a quantidade a ser inferida a partir de \( y \), a probabilidade \( p(x) \) será denominada de distribuição de probabilidade anterior, e \( y \) será a variável de dados do estudo, por exemplo, a medida de um sensor do robô em estudo. A distribuição \( p(x) \) resume a informação sobre a variável \( X \) antes de incorporarmos os dados de \( y \). A probabilidade \( p(x \mid y) \) é chamada de distribuição de probabilidade posterior de \( X \). A regra de Bayes permite inferir a quantidade \( x \) a partir dos dados do sensor \( y \) utilizando a probabilidade inversa, isto é, calcular a probabilidade dos dados \( y \) assumindo que \( x \) é o caso a ser analisado (Thrun, Burgard, Durrant-Whyte, 2005). A probabilidade \( p(x \mid y) \) em robótica probabilística é chamada de modelo generativo, pois descreve em algum nível de abstração como o estado da variável \( X \) influencia a medida do sensor \( Y \). Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se \( \eta = \frac{1}{p(y)} \) para calcular a probabilidade:
 
- \) para calcular a probabilidade:
-
-\[ p(x \mid y) = \eta \cdot p(y \mid x) \cdot p(x) \]
+$$
+p(x \mid y) = \eta \cdot p(y \mid x) \cdot p(x) 
+$$
 
 Finalmente, a distribuição posterior é usada para avaliar a probabilidade das variáveis após os dados do sensor serem conhecidos.
 
