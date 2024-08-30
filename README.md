@@ -69,13 +69,13 @@ $$
 Frequentemente, as variáveis aleatórias têm informações sobre outras variáveis. Por exemplo, os sensores podem fornecer informações importantes sobre o estado do robô para a modelagem probabilística. Nesse sentido, é necessário utilizar a probabilidade condicional para relacionar as variáveis:
 
 $$
-p(x \mid y) = \frac{p(x, y)}{p(y)}
+p(x \mid y) = \frac{p(x, y)} {p(y)}
 $$
 
 No caso \( p(y) > 0 \), a probabilidade condicional é definida por:
 
 $$
-p(x \mid y) = \frac{p(x) \cdot p(y)}{p(y)} = p(x)
+p(x \mid y) = \frac{p(x) \cdot p(y)} {p(y)} = p(x)
 $$
 
 Os axiomas de probabilidade e a probabilidade condicional permitem determinar os resultados da probabilidade total, dados por:
@@ -92,11 +92,15 @@ Os axiomas de probabilidade e a probabilidade condicional permitem determinar os
 Os resultados da probabilidade total permitem a formulação de importantes equações para a robótica probabilística, conhecidas como regras de Bayes, apresentadas da seguinte forma: para \( p(y) > 0 \), tem-se:
 
 - Discreto:
+  
+$$
+p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\sum_{x'} [p(y \mid x') \cdot p(x')]}
+$$
+
+- Contínuo:
+  
   $$
-  p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\sum_{x'} [p(y \mid x') \cdot p(x')]}
-  $$
-- Contínuo: $$
-  $$p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\int p(y \mid x') \cdot p(x') \, dx'}
+  p(x \mid y) = \frac{p(y \mid x) \cdot p(x)}{p(y)} = \frac{p(y \mid x) \cdot p(x)}{\int p(y \mid x') \cdot p(x') \, dx'}
   $$
 
 Uma vez que \( x \) é a quantidade a ser inferida a partir de \( y \), a probabilidade \( p(x) \) será denominada de distribuição de probabilidade anterior, e \( y \) será a variável de dados do estudo, por exemplo, a medida de um sensor do robô em estudo. A distribuição \( p(x) \) resume a informação sobre a variável \( X \) antes de incorporarmos os dados de \( y \). A probabilidade \( p(x \mid y) \) é chamada de distribuição de probabilidade posterior de \( X \). A regra de Bayes permite inferir a quantidade \( x \) a partir dos dados do sensor \( y \) utilizando a probabilidade inversa, isto é, calcular a probabilidade dos dados \( y \) assumindo que \( x \) é o caso a ser analisado (Thrun, Burgard, Durrant-Whyte, 2005). A probabilidade \( p(x \mid y) \) em robótica probabilística é chamada de modelo generativo, pois descreve em algum nível de abstração como o estado da variável \( X \) influencia a medida do sensor \( Y \). Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se \( \eta = \frac{1}{p(y)} \) para calcular a probabilidade:
@@ -111,7 +115,7 @@ Finalmente, a distribuição posterior é usada para avaliar a probabilidade das
 
 A aplicação da robótica probabilística utilizando a plataforma Arduino deverá possibilitar a adaptação dos robôs a diferentes contextos e ambientes de maneira mais eficiente e precisa. Espera-se que, ao aplicar algoritmos probabilísticos e estatísticos na análise dos dados coletados pelos sensores, seja possível melhorar a resposta dos robôs a incertezas e variabilidades do ambiente. Além disso, a plataforma Arduino deverá fornecer uma base sólida para a implementação prática dos algoritmos, contribuindo para a validação dos modelos probabilísticos propostos.
 
-### Citações
+### Referências
 
 - MITCHELL, A. *Arduino: Guia para iniciantes*. 2012.
 - ROSS, S. M. *Introdução à Probabilidade e Estatística para Engenheiros e Cientistas*. 2014a.
