@@ -2,7 +2,7 @@
 
 ## Introdução
 
-<div align="justify">
+
     
 A robótica é uma ciência que observa e manipula o ambiente físico por meio de aparelhos de controle e computadores. Conforme Thrun, Burgard, e Durrant-Whyte (2005), as possibilidades de aplicação da robótica vão desde a indústria, com braços robóticos, até a medicina, com manipuladores que auxiliam cirurgiões, e também na análise de ambientes hostis por meio de robôs tipo drone e/ou andarilhos. Nesse contexto, deve-se destacar que a atuação dos robôs é condicionada pelo hardware, como motores que podem apresentar incerteza e erro devido a ruído de controle, desgaste ou falha mecânica.
 
@@ -146,7 +146,7 @@ $$bel(x_t) = p(x_t | z_{1:t-1}, u_{1:t})$$
 A representação  $(bel(x_t))$  ​é definida como a predição no contexto da filtragem probabilística. A  $(bel(x_t))$  indica a predição do estado no tempo \(t\) com base no estado posterior após a incorporação da medição no tempo \(t\). Nesse sentido, o cálculo de  $(bel(x_t))$ a partir de  $(bel(x_t))$  será chamado de correção ou atualização de medição.
 
 Na implementação do algoritmo baseado no cálculo de  $(bel(x_t))$  e $(\overline{bel}(x_t))$ utiliza-se abordagem descrita na literatura como Filtro de Bayes (THRUN; BURGARD; DURRANT-WHYTE 2005) como se segue:
-</div>
+
 
 #### Algoritmo Filtro de Bayes
 
