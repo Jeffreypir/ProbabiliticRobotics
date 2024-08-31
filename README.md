@@ -1,6 +1,6 @@
 # Robótica Probabilística: Automação Estocástica com Arduino
 
-### Repositório focado em Robótica Probabilista
+### Repositório focado em Robótica Probabilistica
 
 Abaixo está uma pequena introdução sobre o tema.
 
