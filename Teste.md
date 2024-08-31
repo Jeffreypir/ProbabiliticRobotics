@@ -78,7 +78,7 @@ Uma vez que \(x\) é a quantidade a ser inferida a partir de \(y\), a probabilid
 
 Na regra de Bayes, observa-se primeiramente que \(p(y)\) não depende de \(x\). Por essa razão, utiliza-se \( \frac{1}{p(y)}\) para normalizar a regra de Bayes. Assim, ao usar \(\eta = \frac{1}{p(y)}\), obtemos a seguinte:
 
-Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se \( \frac{1}{p(y)} \) para normalizar a regra de Bayes. Assim, ao usar \( \eta = \frac{1}{p(y)} \), obtemos a seguinte formulação:
+Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se $ \frac{1}{p(y)} $ para normalizar a regra de Bayes. Assim, ao usar \( \eta = \frac{1}{p(y)} \), obtemos a seguinte formulação:
 
 $$
 p(x | y) = \eta p(y | x)p(x)
