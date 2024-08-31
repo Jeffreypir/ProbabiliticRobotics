@@ -1,7 +1,7 @@
 # Robótica Probabilística: Automação Estocástica com Arduino
 
 ## Introdução
-
+<div align="justify">
 A robótica é uma ciência que observa e manipula o ambiente físico por meio de aparelhos de controle e computadores. Conforme Thrun, Burgard, e Durrant-Whyte (2005), as possibilidades de aplicação da robótica vão desde a indústria, com braços robóticos, até a medicina, com manipuladores que auxiliam cirurgiões, e também na análise de ambientes hostis por meio de robôs tipo drone e/ou andarilhos. Nesse contexto, deve-se destacar que a atuação dos robôs é condicionada pelo hardware, como motores que podem apresentar incerteza e erro devido a ruído de controle, desgaste ou falha mecânica.
 
 O software também deve ser considerado, uma vez que todos os programas que gerenciam o hardware e o funcionamento do robô são modelos que representam o mundo de maneira aproximada. De acordo com Ross (2014a), modelos são aproximações do mundo real que representam alguma situação ou processo físico. Dessa forma, o modelo pode estar suscetível a problemas como a falta de parâmetros necessários para o funcionamento do robô em determinado ambiente e a incerteza dos dados medidos quando o robô enfrenta situações com variações estocásticas, dificultando sua adaptação. Além disso, o próprio funcionamento do algoritmo pode ser afetado por problemas de implementação computacional, como excesso de processamento e limitações de memória.
@@ -76,9 +76,7 @@ $$p(x | y) = \frac{p(y | x) p(x)}{p(y)} = \frac{p(y | x) p(x)}{\int p(y | x') p(
 
 Uma vez que \(x\) é a quantidade a ser inferida a partir de \(y\), a probabilidade \(p(x)\) será denominada de distribuição de probabilidade anterior e \(y\) será a variável de dados do estudo, por exemplo, a medida de um sensor do robô em estudo. A distribuição \(p(x)\) resume a informação sobre a variável \(X\) antes de incorporarmos os dados de \(y\). A probabilidade \(p(x | y)\) é chamada de distribuição de probabilidade posterior de \(X\). A regra de Bayes permite inferir a quantidade \(x\) a partir dos dados do sensor \(y\) utilizando a probabilidade inversa, isto é, calcular a probabilidade dos dados \(y\) assumindo que \(x\) é o caso a ser analisado (THRUN; BURGARD; DURRANT-WHYTE 2005). A probabilidade \(p(x | y)\) em robótica probabilística é chamada de modelo generativo, pois descreve em algum nível de abstração como o estado da variável \(X\) influencia a medida do sensor \(Y\).
 
-Na regra de Bayes, observa-se primeiramente que \(p(y)\) não depende de \(x\). Por essa razão, utiliza-se \( \frac{1}{p(y)}\) para normalizar a regra de Bayes. Assim, ao usar \(\eta = \frac{1}{p(y)}\), obtemos a seguinte:
-
-Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se    $\frac{1}{p(y)}$    para normalizar a regra de Bayes. Assim, ao usar \( \eta = \frac{1}{p(y)} \), obtemos a seguinte formulação:
+Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se    $\frac{1}{p(y)}$    para normalizar a regra de Bayes. Assim, ao usar   $\eta = \frac{1}{p(y)}$   , obtemos a seguinte formulação:
 
 $$
 p(x | y) = \eta p(y | x)p(x)
@@ -144,12 +142,19 @@ $$bel(x_t) = p(x_t | z_{1:t-1}, u_{1:t})$$
 A representação \(bel(x_t)\) ​é definida como a predição no contexto da filtragem probabilística. A \(bel(x_t)\) indica a predição do estado no tempo \(t\) com base no estado posterior após a incorporação da medição no tempo \(t\). Nesse sentido, o cálculo de \(bel(x_t)\) a partir de \(bel(x_t)\) será chamado de correção ou atualização de medição.
 
 Na implementação do algoritmo baseado no cálculo de \(bel(x_t)\) e \(bel(x_t)\) utiliza-se abordagem descrita na literatura como Filtro de Bayes (THRUN; BURGARD; DURRANT-WHYTE 2005) como se segue:
+</div>
 
-```markdown
-Algoritmo Filtro de Bayes (bel(x_{t-1}), u_t, z_t):
-    for all x_t faça
-        bel(x_t) = ∫ p(x_t | u_t, x_{t-1}) bel(x_{t-1}) dx_{t-1}
-    bel(x_t) = η p(z_t | x_t) bel(x_t)
-    fimfor
+### Algoritmo Filtro de Bayes
+
+$$
+\begin{aligned}
+Algoritmo Filtro de Bayes (bel(x_{t-1}), u_t, z_t):\\
+    for \hspace{0.2cm} all x_t faça \\
+        bel(x_t) = \int p(x_t | u_t, x_{t-1}) \, \text{bel}(x_{t-1}) \, dx_{t-1} \\
+        bel(x_t) = \eta \, p(z_t | x_t) \, \text{bel}(x_t) \\ 
+    fimfor \\
     return bel(x_t)
+    \end{aligned}
+$$
+
 
