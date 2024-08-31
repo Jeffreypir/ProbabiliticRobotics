@@ -76,10 +76,16 @@ $$p(x | y) = \frac{p(y | x) p(x)}{p(y)} = \frac{p(y | x) p(x)}{\int p(y | x') p(
 
 Uma vez que \(x\) é a quantidade a ser inferida a partir de \(y\), a probabilidade \(p(x)\) será denominada de distribuição de probabilidade anterior e \(y\) será a variável de dados do estudo, por exemplo, a medida de um sensor do robô em estudo. A distribuição \(p(x)\) resume a informação sobre a variável \(X\) antes de incorporarmos os dados de \(y\). A probabilidade \(p(x | y)\) é chamada de distribuição de probabilidade posterior de \(X\). A regra de Bayes permite inferir a quantidade \(x\) a partir dos dados do sensor \(y\) utilizando a probabilidade inversa, isto é, calcular a probabilidade dos dados \(y\) assumindo que \(x\) é o caso a ser analisado (THRUN; BURGARD; DURRANT-WHYTE 2005). A probabilidade \(p(x | y)\) em robótica probabilística é chamada de modelo generativo, pois descreve em algum nível de abstração como o estado da variável \(X\) influencia a medida do sensor \(Y\).
 
-Na regra de Bayes, observa-se primeiramente que \(p(y)\) não depende de \(x\). Por essa razão, utiliza-se \( \frac{1}{p(y)}\) para normalizar a regra de Bayes. Assim, ao usar \(\eta = \frac{1}{p(y)}\), obtemos a seguinte
+Na regra de Bayes, observa-se primeiramente que \(p(y)\) não depende de \(x\). Por essa razão, utiliza-se \( \frac{1}{p(y)}\) para normalizar a regra de Bayes. Assim, ao usar \(\eta = \frac{1}{p(y)}\), obtemos a seguinte:
 
+Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se \( \frac{1}{p(y)} \) para normalizar a regra de Bayes. Assim, ao usar \( \eta = \frac{1}{p(y)} \), obtemos a seguinte formulação:
 
-enciar o ambiente em que está situado. Nesse sentido, é necessária uma definição mais precisa da interação entre o robô e seu ambiente para que exista uma base de análise sólida.
+$$
+p(x | y) = \eta p(y | x)p(x)
+$$
+
+Essa formulação tem como objetivo deixar evidente que, ao final do processo de aplicação da regra de Bayes, deve-se realizar a normalização para 1.
+
 
 #### Estado
 
