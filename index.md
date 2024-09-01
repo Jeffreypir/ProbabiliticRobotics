@@ -1,11 +1,7 @@
 
 # Robótica Probabilística: Automação Estocástica com Arduino oi
 
-<div align="justify">
-
 A robótica é uma ciência que observa e manipula o ambiente físico por meio de aparelhos de controle e computadores. Conforme Thrun, Burgard, e Durrant-Whyte (2005), as possibilidades de aplicação da robótica vão desde a indústria, com braços robóticos, até a medicina, com manipuladores que auxiliam cirurgiões, e também na análise de ambientes hostis por meio de robôs tipo drone e/ou andarilhos. Nesse contexto, deve-se destacar que a atuação dos robôs é condicionada pelo hardware, como motores que podem apresentar incerteza e erro devido a ruído de controle, desgaste ou falha mecânica.
-
-
 
 O software também deve ser considerado, uma vez que todos os programas que gerenciam o hardware e o funcionamento do robô são modelos que representam o mundo de maneira aproximada. De acordo com Ross (2014a), modelos são aproximações do mundo real que representam alguma situação ou processo físico. Dessa forma, o modelo pode estar suscetível a problemas como a falta de parâmetros necessários para o funcionamento do robô em determinado ambiente e a incerteza dos dados medidos quando o robô enfrenta situações com variações estocásticas, dificultando sua adaptação. Além disso, o próprio funcionamento do algoritmo pode ser afetado por problemas de implementação computacional, como excesso de processamento e limitações de memória.
 
@@ -14,11 +10,11 @@ O nível de incerteza no funcionamento do robô depende da aplicação. Nesse se
 Na construção e nos testes com robôs, é importante ter uma plataforma de prototipagem, ou seja, uma plataforma de hardware e software para a implementação de modelos e algoritmos em protótipos de robôs. A plataforma Arduino se destaca por fornecer uma plataforma livre. A construção de hardware e software no Arduino, bem como sua documentação, são abertas, permitindo que os desenvolvedores analisem o funcionamento dos protótipos sem restrições de licença (MITCHELL, 2012). Além disso, seus componentes são de fácil acesso, o que torna a plataforma favorável para a análise de dados e a implementação de modelos, garantindo a fidelidade dos dados.
 
 Nesse sentido, o presente trabalho propõe um estudo sobre robótica probabilística e suas aplicações utilizando a plataforma Arduino, por essa área ter um amplo campo de desenvolvimento em diferentes ambientes. Assim, são necessários algoritmos probabilístico-estatísticos robustos para a aplicabilidade de robôs em diferentes tarefas e ambientes.
-</div>
 
 
 ### Geral
 Implementar e analisar algoritmos probabilísticos/estatísticos por meio da robótica probabilística para melhor adaptabilidade de robôs em diferentes contextos.
+
 
 ### Específicos
 - Programar algoritmos da robótica probabilística em diferentes contextos.
@@ -29,7 +25,6 @@ Implementar e analisar algoritmos probabilísticos/estatísticos por meio da rob
 
 ### Dados e Linguagem de Programação
 
-<div align="justify">
 
 Os dados serão obtidos por meio de sensores da plataforma de prototipagem em Arduino e serão analisados com rigor estatístico. Esses dados serão utilizados para simulações e inferências estatísticas conforme a necessidade da pesquisa.
 
@@ -89,11 +84,10 @@ $$
 
 Essa formulação tem como objetivo deixar evidente que, ao final do processo de aplicação da regra de Bayes, deve-se realizar a normalização para 1.
 
-</div>
 
 ## O Ambiente ou mundo do Robô
 
-<div align="justify">
+
 
 O ambiente do robô é um sistema dinâmico que possui um estado interno. O robô adquire informações do ambiente por meio de sensores que podem apresentar ruídos que afetam a qualidade das informações obtidas. Além disso, muitas informações são difíceis de serem obtidas, pois muitas variáveis não podem ser medidas de forma adequada pela interação do robô com o mundo. O robô sofre influência do ambiente e, ao mesmo tempo, também pode influenciar o ambiente em que está situado. Nesse sentido, é necessária uma definição mais precisa da interação entre o robô e seu ambiente para que exista uma base de análise sólida.
 
@@ -260,13 +254,11 @@ Nessas situações, como o controle de puxada não está interferindo no ambient
 
 Tendo finalizados os aspectos relevantes da modelagem probabilística, serão abordados os resultados esperados para o presente estudo.
 
-</div>
 
 
 ## Resultados Esperados 
 
 
-<div align="justify"> 
 
    Por meio desta pesquisa, será possível utilizar e aperfeiçoar a robótica probabilística. Serão construídos e implementados protótipos utilizando a plataforma Arduino, com o objetivo de promover a aplicação da robótica em contextos técnicos e sociais variados.
 
@@ -280,8 +272,6 @@ Tendo finalizados os aspectos relevantes da modelagem probabilística, serão ab
 
 
 ## Referências 
-
-<div align="justify">
 
 - THRUN, Sebastian; BURGARD, Wolfram; DURRANT-WHYTE, Hugh. *Probabilistic Robotics*. MIT Press, 2005.
 - CIFUENTES, Mario; SERRANO, Sergio. *A Survey of Probabilistic Algorithms for Robotics*. Journal of Robotics, v. 22, n. 3, p. 200-214, 2019.
@@ -308,4 +298,3 @@ Tendo finalizados os aspectos relevantes da modelagem probabilística, serão ab
 - CLEVELAND, William S. *Visualizing Data*. Hobart: AT&T Bell Laboratories, 1993.
 - WICKHAM, Hadley. *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol: O'Reilly Media, 2016.
 
-</div>
