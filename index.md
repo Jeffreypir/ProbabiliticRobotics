@@ -7,7 +7,6 @@ Bem-vindo ao documento. Aqui está uma visão geral dos capítulos disponíveis:
 - [Capítulo 3: Metodologia](Metodologia.md)
 - [Capítulo 4: Ambiente do Robô](Ambiente.md)
 - [Capítulo 5: Resultado Esperado](Resultado.md)
-  [Voltar ao índice](index.md)
 
 Leia os capítulos para mais detalhes.
 
