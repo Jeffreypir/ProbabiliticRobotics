@@ -7,3 +7,5 @@
    Também será investigada a interação das variáveis que modelam o comportamento do robô e sua interação com o ambiente.
 
    Por fim, será elaborada a tese de doutorado, seguida de publicações na área, conforme os critérios do Programa, como artigos, apresentações em congressos e publicação de resumos, com o objetivo de promover o estudo em estatística, particularmente em estatística computacional, através de pesquisas que contribuam para o enriquecimento do Programa.
+
+ [Voltar ao índice](index.md)
