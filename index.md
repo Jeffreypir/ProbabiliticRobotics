@@ -301,9 +301,7 @@ Tendo finalizados os aspectos relevantes da modelagem probabilística, serão ab
 - CLEVELAND, William S. *Visualizing Data*. Hobart: AT&T Bell Laboratories, 1993.
 - WICKHAM, Hadley. *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol: O'Reilly Media, 2016.
 
+<script type="text/javascript" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js">
+</script>
 
-<!-- Adicionando o script e o CSS do KaTeX -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
-        onload="renderMathInElement(document.body);"></script>
