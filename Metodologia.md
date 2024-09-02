@@ -68,3 +68,5 @@ p(x | y) = \eta p(y | x)p(x)
 $$
 
 Essa formulação tem como objetivo deixar evidente que, ao final do processo de aplicação da regra de Bayes, deve-se realizar a normalização para 1.
+
+ [Voltar ao índice](index.md)
