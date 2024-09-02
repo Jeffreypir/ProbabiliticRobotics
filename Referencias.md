@@ -24,3 +24,5 @@
 - MCCINNIS, Richard. *Data Science from Scratch: First Principles with Python*. 2. ed. Sebastopol: O'Reilly Media, 2019.
 - CLEVELAND, William S. *Visualizing Data*. Hobart: AT&T Bell Laboratories, 1993.
 - WICKHAM, Hadley. *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol: O'Reilly Media, 2016.
+
+ [Voltar ao índice](index.md)
