@@ -1,4 +1,4 @@
-# Robótica Probabilística: Automação Estocástica com Arduino Testando de novo
+# Robótica Probabilística: Automação Estocástica com Arduino 01
 
 A robótica é uma ciência que observa e manipula o ambiente físico por meio de aparelhos de controle e computadores. Conforme Thrun, Burgard, e Durrant-Whyte (2005), as possibilidades de aplicação da robótica vão desde a indústria, com braços robóticos, até a medicina, com manipuladores que auxiliam cirurgiões, e também na análise de ambientes hostis por meio de robôs tipo drone e/ou andarilhos. Nesse contexto, deve-se destacar que a atuação dos robôs é condicionada pelo hardware, como motores que podem apresentar incerteza e erro devido a ruído de controle, desgaste ou falha mecânica.
 
@@ -69,13 +69,19 @@ $$p(y) = \int p(x | y)p(y) dy \quad \text{(caso contínuo)}$$
 
 Os resultados da probabilidade total permitem a formulação de importantes equações para a robótica probabilística, conhecidas como regras de Bayes, apresentadas da seguinte forma: para \(p(y) > 0\) tem-se:
 
-$$p(x | y) = \frac{p(y | x) p(x)}{p(y)} = \frac{p(y | x) p(x)}{\sum_{x'}p(y | x')p(x')} \quad \text{(discreto)}$$
+$$
+p(x | y) = \frac{p(y | x) p(x)}{p(y)} = \frac{p(y | x) p(x)}{\sum_{x'}p(y | x')p(x')} \quad \text{(discreto)}
+$$
 
-$$p(x | y) = \frac{p(y | x) p(x)}{p(y)} = \frac{p(y | x) p(x)}{\int p(y | x') p(x') dx'} \quad \text{(contínuo)}$$
+$$
+p(x | y) = \frac{p(y | x) p(x)}{p(y)} = \frac{p(y | x) p(x)}{\int p(y | x') p(x') dx'} \quad \text{(contínuo)}
+$$
+
+
 
 Uma vez que \(x\) é a quantidade a ser inferida a partir de \(y\), a probabilidade \(p(x)\) será denominada de distribuição de probabilidade anterior e \(y\) será a variável de dados do estudo, por exemplo, a medida de um sensor do robô em estudo. A distribuição \(p(x)\) resume a informação sobre a variável \(X\) antes de incorporarmos os dados de \(y\). A probabilidade \(p(x | y)\) é chamada de distribuição de probabilidade posterior de \(X\). A regra de Bayes permite inferir a quantidade \(x\) a partir dos dados do sensor \(y\) utilizando a probabilidade inversa, isto é, calcular a probabilidade dos dados \(y\) assumindo que \(x\) é o caso a ser analisado (THRUN; BURGARD; DURRANT-WHYTE 2005). A probabilidade \(p(x | y)\) em robótica probabilística é chamada de modelo generativo, pois descreve em algum nível de abstração como o estado da variável \(X\) influencia a medida do sensor \(Y\).
 
-Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se  $\frac{1}{p(y)}$  para normalizar a regra de Bayes. Assim, ao usar $\eta = \frac{1}{p(y)}$ , obtemos a seguinte formulação:
+Na regra de Bayes, observa-se primeiramente que \( p(y) \) não depende de \( x \). Por essa razão, utiliza-se   $\frac{1}{p(y)}$   para normalizar a regra de Bayes. Assim, ao usar   $\eta = \frac{1}{p(y)}$    , obtemos a seguinte formulação:
 
 $$
 p(x | y) = \eta p(y | x)p(x)
@@ -85,8 +91,6 @@ Essa formulação tem como objetivo deixar evidente que, ao final do processo de
 
 
 ## O Ambiente ou mundo do Robô
-
-
 
 O ambiente do robô é um sistema dinâmico que possui um estado interno. O robô adquire informações do ambiente por meio de sensores que podem apresentar ruídos que afetam a qualidade das informações obtidas. Além disso, muitas informações são difíceis de serem obtidas, pois muitas variáveis não podem ser medidas de forma adequada pela interação do robô com o mundo. O robô sofre influência do ambiente e, ao mesmo tempo, também pode influenciar o ambiente em que está situado. Nesse sentido, é necessária uma definição mais precisa da interação entre o robô e seu ambiente para que exista uma base de análise sólida.
 
