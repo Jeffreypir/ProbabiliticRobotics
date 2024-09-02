@@ -161,6 +161,8 @@ $$
 p(X_t=\text{EstaFechada} \mid  U_t=\text{naoFaz}, X_{t-1}=\text{EstaFechada}) = 1
 $$
 
+ [Voltar ao índice](index.md)
+
 Nessas situações, como o controle de puxada não está interferindo no ambiente do robô, a probabilidade de mudança de estado é nula.
 
 Tendo finalizados os aspectos relevantes da modelagem probabilística, serão abordados os resultados esperados para o presente estudo.
