@@ -1,11 +1,5 @@
 # Robótica Probabilística: Automação Estocástica com Arduino 05
 
----
-title: Documento Principal
----
-
-# Introdução
-
 Bem-vindo ao documento. Aqui está uma visão geral dos capítulos disponíveis:
 
 - [Capítulo 1: Introdução](Introducao.md)
